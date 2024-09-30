@@ -4,16 +4,20 @@
  */
 package main;
 
-import modell.Jatek;
+import modell.JatekModell;
+import nezet.FelugroNezet;
+import vezerlo.FekugroVezerlo;
 
 
 public class KincsesLada {
 
     
     public static void main(String[] args) {
-        Jatek jatek = new Jatek();
-        System.out.println(jatek.kezdes());
-        jatek.bekeres();
+        //new JatekModell();
+        
+        JatekModell modell = new JatekModell();
+        FelugroNezet nezet = new FelugroNezet();
+        new FekugroVezerlo(modell, nezet);
     }
     
 }
